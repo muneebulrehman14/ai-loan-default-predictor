@@ -65,4 +65,21 @@ A **100% offline desktop application** that helps microfinance loan officers pre
 | **PNG report export** | Save & print results for loan officer's file |
 | **100% offline** | Critical for rural Pakistan with unreliable internet |
 
-## 🛠️ Tech Stack
+## 📥 Installation
+**Windows PowerShell / CMD (as Administrator):**
+cd Desktop
+git clone https://github.com/muneebulrehman14/ai-loan-default-predictor.git
+cd ai-loan-default-predictor
+python -m venv venv
+venv\Scripts\activate
+pip install pandas numpy scikit-learn xgboost imbalanced-learn matplotlib
+python loan_default_gui.py
+
+**macOS / Linux Terminal:**
+cd Desktop
+git clone https://github.com/muneebulrehman14/ai-loan-default-predictor.git
+cd ai-loan-default-predictor
+python3 -m venv venv
+source venv/bin/activate
+pip install pandas numpy scikit-learn xgboost imbalanced-learn matplotlib
+python3 loan_default_gui.py
